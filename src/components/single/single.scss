@@ -1,0 +1,139 @@
+@import '../../styles/responsive.scss';
+@import '../../styles/variables.scss';
+
+.single {
+  display: flex;
+
+  @include xl {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .view {
+    flex: 1;
+
+    .info {
+
+      .topInfo {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+
+        img {
+          width: 100px;
+          height: 100px;
+          border-radius: 20px;
+          object-fit: cover;
+        }
+
+        h2 {
+          font-weight: bold;
+        }
+
+            /* Default button styles */
+    button {
+      padding: 5px;
+      background: #f45b69;
+      color: #fff;
+      font-weight: bold;
+      border-radius: 4px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+    
+    /* Apply default styles to all buttons */
+    button:not(:first-child) {
+      border: 1px solid transparent; /* Add border for all buttons except the first one */
+    }
+    
+    /* Apply hover styles to all buttons except the first one */
+    button:not(:first-child):hover {
+      background: $main-bg;
+      color: $main-color;
+      border-color: $main-color;
+    }
+      }
+
+      .details {
+        font-size: 12px;
+
+        .item {
+          margin: 10px 0px;
+        }
+
+        .itemTitle {
+          font-weight: 600;
+          margin-right: 10px;
+          text-transform: capitalize;
+        }
+      }
+    }
+
+    hr {
+      width: 90%;
+      height: 0;
+      border: 0.5px solid gray;
+      margin: 10px 0px;
+
+      @include xl {
+        display: none;
+      }
+    }
+
+    .chart {
+
+      margin-top: 50px;
+      width: 80%;
+      height: 300px;
+
+      @include md {
+        display: none;
+      }
+    }
+  }
+  
+  .activities {
+    flex: 1;
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      li {
+        list-style-type: none;
+        position: relative;
+        width: 1px;
+        padding-top: 20px;
+        background-color: #f45b69;
+
+        &::after {
+          content: "";
+          position: absolute;
+          left: 50%;
+          bottom: 0;
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          background-color: #f45b69;
+          transform: translateX(-50%);
+        }
+
+        div {
+          min-width: 480px;
+          padding: 10px;
+          background-color: #f45b6810;
+
+          p{
+            margin-bottom: 5px;
+          }
+
+          time{
+            font-size: 12px;
+          }
+        }
+      }
+    }
+  }
+}

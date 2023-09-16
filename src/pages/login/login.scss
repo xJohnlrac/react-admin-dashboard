@@ -1,0 +1,109 @@
+@import '../../styles/variables.scss';
+
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  background: $main-bg;
+  font-family: Inter, 'sans-serif';
+
+  .card {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    width: 300px;
+    height: 500px;
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+
+    p {
+      font-size: 20px;
+      margin-left: 10px;
+      margin-top: 10px;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: -20px;
+      color: #2a3447;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      
+      .username, .password {
+        display: flex;
+        padding: 5px;
+        gap: 10px;
+        align-items: center;
+        border-bottom: 2px solid $soft-color;
+        margin: 0px 30px;
+
+        img {
+          width: 16px;
+          height: 16px;
+          object-fit: cover;
+        }
+
+        input {
+          border: none;
+        }
+      }
+
+      span {
+        text-align: right;
+        font-size: 10px;
+        margin-right: 30px;
+        margin-top: -25px;
+        
+      }
+    }
+
+    button {
+      margin: 0px 50px;
+      padding: 5px;
+      font-weight: bold;
+      border-radius: 20px;
+      border: none;
+      background: #2a3447;
+      color: #fff;  
+      margin-top: -20px;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }   
+      button:not(:first-child) {
+        border: 1px solid transparent; 
+      }
+      
+      button:not(:first-child):hover {
+        background: #fff;
+        color: $main-bg;
+        border-color: $main-bg;
+      }
+
+    span {
+      font-size: 10px;
+      text-align: center;
+      margin-top: -35px;
+    }
+
+    .logos {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      margin-top: -30px;
+
+      img {
+        width: 40px;
+        height: 40px;
+        object-fit: cover;
+      }
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.dataTable {
+
+  .dataGrid{
+    background: white;
+    font-size: 12px;
+
+    .MuiDataGrid-toolbarContainer {
+      flex-direction: row-reverse;
+
+      .MuiInputBase-input, .MuiButtonBase-root {
+        font-size: 12px;
+      }
+    }
+
+    img {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+
+    .action {
+      display: flex;
+      gap: 10px;
+
+      img {
+        width: 14px;
+        height: 14px;
+        cursor: pointer;
+      }
+    }
+  }
+}

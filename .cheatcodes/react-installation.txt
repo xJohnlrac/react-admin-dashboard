@@ -1,0 +1,30 @@
+npm create vite@latest ./
+
+npm install -D sass
+
+add pages folder
+> home
+> products
+> users
+> login
+
+npm react-router-dom
+
+create a layout
+> add a components first
+
+add navbar
+add footer
+add menu
+> menuContainer
+--> import css variables 
+--> import menu in tsx file to use data.ts
+
+> contentContainer
+--> add components for contentContainer
+--> add data for userTopDeals
+--> add data for chartBox
+
+// Start Users page,
+> MUI Data grid
+> npm install @mui/x-data-grid

@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.products {
+
+  .info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+
+    /* Default button styles */
+    button {
+      padding: 4px;
+      background: $main-color;
+      color: $dark-color;
+      font-weight: 500;
+      border-radius: 4px;
+      font-size: 12px;
+      cursor: pointer;
+      transition: background 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    }
+    
+    /* Apply default styles to all buttons */
+    button:not(:first-child) {
+      border: 1px solid transparent; /* Add border for all buttons except the first one */
+    }
+    
+    /* Apply hover styles to all buttons except the first one */
+    button:not(:first-child):hover {
+      background: $main-bg;
+      color: $main-color;
+      border-color: $main-color;
+    }
+    
+  }
+}

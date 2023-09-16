@@ -1,0 +1,73 @@
+@import '../../styles/responsive.scss';
+
+.topBox {
+
+  h2 {
+    margin-bottom: 10px;
+
+    @include sm {
+      font-size: 12px;
+    }
+  } 
+
+  .list {
+
+    
+    .listItem {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 20px;
+
+
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+      
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
+
+          @include xl {
+            display: none;
+          }
+
+          @include lg {
+            display: block;
+          }
+        }
+        
+        .userText {
+          display: flex;
+          flex-direction: column;
+          gap: 2px;
+
+          .username {
+            font-size: 12px;
+            font-weight: 500;
+          }
+
+          .email {
+            font-size: 10px;
+
+            @include xl {
+              display: none;
+            }
+  
+            @include lg {
+              display: block;
+            }
+          }
+        }
+      }
+
+      .amount {
+        font-weight: 500;
+        font-size: 10px;
+      }
+    }
+  }
+}

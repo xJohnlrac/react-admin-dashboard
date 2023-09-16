@@ -1,0 +1,46 @@
+@import './variables.scss';
+@import './responsive.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.main {
+  font-family: "Inter", sans-serif;
+  color: $main-color;
+  font-size: 12px;
+  background-color: $main-bg;
+}
+
+.container {
+  display: flex;
+}
+
+.menuContainer {
+  width: 200px;
+  padding: 5px 20px;
+  border-right: 2px solid $soft-bg;
+
+  @include lg{
+    width: max-content;
+  }
+}
+
+.contentContainer {
+  margin: 10px;
+  padding: 5px 10px;
+  width: 100%;
+  overflow-x: auto; 
+  white-space: nowrap; 
+}
+
+.contentContainer::-webkit-scrollbar {
+  width: 0; 
+}

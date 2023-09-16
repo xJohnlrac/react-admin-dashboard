@@ -1,0 +1,48 @@
+@import '../../styles/variables.scss';
+@import '../../styles/responsive.scss';
+
+.menu {
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 10px;
+
+    .title {
+      font-size: 10px;
+      font-weight: 200;
+      color: $soft-color;
+      display: flex;
+      text-transform: uppercase;
+
+      @include lg{
+        display: none;
+      }
+    }
+
+    .listItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      padding: 5px;
+      border-radius: 4px;
+
+      img {
+        width: 16px;
+        height: 16px;
+        object-fit: cover;
+      }
+
+      &:hover {
+        background-color: $soft-bg;
+      }
+
+      .listItemTitle {
+      @include lg{
+        display: none;
+      }
+      }
+    }
+  }
+}
