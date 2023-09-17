@@ -13,7 +13,7 @@ const PieChartBox = () => {
     <div className='pieChartBox'>
       <h2>Leads by Source</h2>
       <div className="chart">
-      <ResponsiveContainer width="99%" height={300}>
+      <ResponsiveContainer width="100%" height={300}>
           <PieChart>
             <Tooltip
             contentStyle={{background: '#fff', borderRadius: '5px'}}

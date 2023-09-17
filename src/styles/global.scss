@@ -7,6 +7,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 12px;
+  background-color: $main-bg;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -15,8 +20,6 @@ a {
 .main {
   font-family: "Inter", sans-serif;
   color: $main-color;
-  font-size: 12px;
-  background-color: $main-bg;
 }
 
 .container {
